@@ -19,10 +19,10 @@ export default function Home(props: HomeProps) {
       </Head>
 
       <Header />
-      <PageTitle
-        title="Simples e minimalista, como deve ser."
-        description="Blog desenvolvido usando Next.js, React.js,markdown (p/ os posts) e styled-components, hospedado na famosa vercel."
-      />
+      <PageTitle title="Simples e minimalista, como deve ser.">
+        Blog desenvolvido usando Next.js, React.js,styled-components <br /> e
+        markdown (para os posts) , hospedado na famosa vercel.
+      </PageTitle>
 
       <PostList posts={props.posts} />
 

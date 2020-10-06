@@ -9,10 +9,12 @@ export const Container = styled.div`
 
   img {
     max-width: 100%;
-    /* border-radius: 2px; */
+    /* border-radius: 5px; */
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s ease-in-out;
+    /* border: 5px solid #000; */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   img:hover {

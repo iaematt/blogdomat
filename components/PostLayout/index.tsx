@@ -15,8 +15,8 @@ export const PostLayout: React.FC<Props> = ({
 }) => {
   return (
     <Container>
-      <img src={thumbnailUrl} alt={title} />
       <div dangerouslySetInnerHTML={{ __html: content }} />
+      <img src={thumbnailUrl} alt={title} />
     </Container>
   )
 }

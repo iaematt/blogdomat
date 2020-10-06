@@ -15,7 +15,7 @@ export async function getAllPosts() {
     const content = await import(`../../_posts/${post}`)
     const meta = matter(content.default)
 
-    const thumbnailUrl = `${baseUrl}/api/thumbnail.png?title=${meta.data.title}`
+    const thumbnailUrl = `${baseUrl}/api/thumbnail.png?title=${meta.data.title}&icon=${meta.data.icon}`
 
     posts.push({
       slug: post.replace('.md', ''),
@@ -33,7 +33,7 @@ export async function getPostBySlug(slug: any) {
   const meta = matter(fileContent.default)
   const content = marked(meta.content)
 
-  const thumbnailUrl = `${baseUrl}/api/thumbnail.png?title=${meta.data.title}`
+  const thumbnailUrl = `${baseUrl}/api/thumbnail.png?title=${meta.data.title}&icon=${meta.data.icon}`
 
   return {
     title: meta.data.title,

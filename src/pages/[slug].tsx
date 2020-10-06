@@ -39,7 +39,7 @@ export default function Post(props: PostProps) {
 
       <Header />
 
-      <PageTitle title={props.title} description={props.description} />
+      <PageTitle title={props.title}>{props.description}</PageTitle>
 
       <PostLayout
         title={props.title}

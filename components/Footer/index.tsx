@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   return (
     <Container>
       <p>
-        Copyright © 2020 <Link href="/">Blog do Mat</Link>, todos os direitos
+        Copyright © 2020 <Link href="/">blogdom4t</Link>, todos os direitos
         reservados.
       </p>
     </Container>

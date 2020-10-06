@@ -25,7 +25,7 @@ export default createGlobalStyle`
   }
 
   a:hover {
-    color: ${props => lighten(0.15, props.theme.colors.primary as string)};
+    color: ${props => props.theme.colors.secondary};
   }
 
   h1, h2, h3, h4, h5, h6, strong {
@@ -35,5 +35,9 @@ export default createGlobalStyle`
   ::selection {
     background: ${props => props.theme.colors.selectBackground};
     color: ${props => props.theme.colors.selectColor};
-}
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
 `

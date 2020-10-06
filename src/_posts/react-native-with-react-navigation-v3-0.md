@@ -1,11 +1,12 @@
 ---
 title: 'React Native demo with React Navigation v3.0'
 description: 'Hello there. Im Augusto Rosa (https://twitter.com/agttrosa) and today, Im going to introduce yourself to react-navigation library on a react-native simple project.'
+icon: 'https://cdn.worldvectorlogo.com/logos/graphql.svg'
 ---
 
 Hello there. I'm Augusto Rosa (https://twitter.com/agttrosa) and today, I'm going to introduce yourself to react-navigation library on a react-native simple project. Are you ready?
 
-![][https://miro.medium.com/max/700/1*X2bU0RyRT0C0iEX6ftuOrg.png]
+![image](https://images.freeimages.com/images/large-previews/e7d/screenshot-at-arcade-1254454.jpg)
 
 (This image was taken from https://rocketseat.com.br/)
 
