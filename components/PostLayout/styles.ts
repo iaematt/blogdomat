@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.article`
-  width: 800px;
-  margin: 20px auto;
+  width: 920px;
+  margin: 70px auto 10px;
 
   h1 {
     margin-bottom: 15px;

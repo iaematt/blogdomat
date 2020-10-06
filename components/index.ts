@@ -1,5 +1,6 @@
 export { Footer } from './Footer'
 export { Header } from './Header'
 export { Menu } from './Menu'
+export { PageTitle } from './PageTitle'
 export { PostLayout } from './PostLayout'
 export { PostList } from './PostList'

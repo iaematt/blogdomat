@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { GetStaticPropsContext } from 'next'
 
 import { getPostBySlug, getAllPosts } from './api/posts'
-import { Footer, Header, Menu, PostLayout } from '../../components'
+import { Footer, Header, Menu, PostLayout, PageTitle } from '../../components'
 
 interface PostProps {
   title: string
@@ -38,11 +38,11 @@ export default function Post(props: PostProps) {
       </Head>
 
       <Header />
-      <Menu />
+
+      <PageTitle title={props.title} description={props.description} />
 
       <PostLayout
         title={props.title}
-        description={props.description}
         thumbnailUrl={props.thumbnailUrl}
         content={props.content}
       />

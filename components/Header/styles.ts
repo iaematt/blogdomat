@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  width: 800px;
-  margin: 30px auto;
-  text-align: center;
+  width: 920px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   h1 {
-    font-family: 'Rowdies', cursive;
-    font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 500;
 
     a {
-      color: #fafafa;
+      color: ${props => props.theme.colors.primary};
     }
   }
 `

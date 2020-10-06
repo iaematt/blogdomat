@@ -1,8 +1,7 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import { getAllPosts } from './api/posts'
 
-import { Footer, Header, Menu, PostList } from '../../components'
+import { Footer, Header, PageTitle, PostList } from '../../components'
 
 interface HomeProps {
   posts: Array<{
@@ -16,12 +15,14 @@ export default function Home(props: HomeProps) {
   return (
     <>
       <Head>
-        <title>Start | Blog do Mat</title>
+        <title>start | blogdom4t</title>
       </Head>
 
       <Header />
-
-      <Menu />
+      <PageTitle
+        title="Simples e minimalista, como deve ser."
+        description="Blog desenvolvido usando Next.js, React.js,markdown (p/ os posts) e styled-components, hospedado na famosa vercel."
+      />
 
       <PostList posts={props.posts} />
 

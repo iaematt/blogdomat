@@ -25,6 +25,8 @@
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-use-before-define": "off"
   }
 }

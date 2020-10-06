@@ -14,7 +14,8 @@ export default createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font: 400 13px 'Mulish', sans-serif;
+    font: 400 14px 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
@@ -27,7 +28,12 @@ export default createGlobalStyle`
     color: ${props => lighten(0.15, props.theme.colors.primary as string)};
   }
 
-  h1, h2, h3, h4, h5, h6 {
-
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
   }
+
+  ::selection {
+    background: ${props => props.theme.colors.selectBackground};
+    color: ${props => props.theme.colors.selectColor};
+}
 `
