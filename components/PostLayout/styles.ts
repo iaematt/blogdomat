@@ -19,20 +19,30 @@ export const Container = styled.article`
     margin-bottom: 20px;
   }
 
-  /* @media screen and (max-width: 880px) {
+  @media screen and (max-width: 880px) {
     width: 95%;
     display: flex;
     flex-direction: column-reverse;
-  } */
+  }
 `
 
 export const Article = styled.article`
   width: 60%;
+
+  @media screen and (max-width: 880px) {
+    width: 100%;
+  }
 `
 
 export const Image = styled.div`
   width: 39%;
   padding-top: 47px;
+
+  @media screen and (max-width: 880px) {
+    padding-top: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
   img {
     max-width: 100%;
