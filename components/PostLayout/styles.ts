@@ -3,13 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.article`
   width: 920px;
   margin: 70px auto 10px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-gap: 15px;
-
-  img {
-    max-width: 100%;
-  }
+  grid-gap: 15px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   h1,
   h2,
@@ -20,9 +19,22 @@ export const Container = styled.article`
     margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 880px) {
+  /* @media screen and (max-width: 880px) {
     width: 95%;
     display: flex;
     flex-direction: column-reverse;
+  } */
+`
+
+export const Article = styled.article`
+  width: 60%;
+`
+
+export const Image = styled.div`
+  width: 39%;
+  padding-top: 47px;
+
+  img {
+    max-width: 100%;
   }
 `

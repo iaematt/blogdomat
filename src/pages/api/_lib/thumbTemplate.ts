@@ -16,9 +16,9 @@ export default function getThumbnailTemplate(title: string, icon: string) {
         font-family: Roboto, sans-serif;
         color: #EDECD8;
         background: #222222;
-        // background-image:
-        // radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2%, transparent 0%),
-        // radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2%, transparent 0%);
+        background-image:
+        radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2%, transparent 0%),
+        radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2%, transparent 0%);
         background-size: 100px 100px;
         height: 100vh;
       }
@@ -47,12 +47,13 @@ export default function getThumbnailTemplate(title: string, icon: string) {
 
       .hover-background {
         width: 120%;
-        background: #292929;
-        height: 200px;
+        background: #81D6DB;
+        height: 80px;
         position: fixed;
         left: -20px;
         bottom: -45px;
-        transform: rotate(2deg)
+        transform: rotate(1deg);
+        opacity: 0.7;
       }
     </style>
   </head>

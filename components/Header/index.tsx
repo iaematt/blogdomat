@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <h1>
-        <Link href="/">blogdom4t</Link>
+        <Link href="/">blogdomat 🌠</Link>
       </h1>
 
       <Menu>
@@ -20,7 +20,11 @@ export const Header: React.FC = () => {
         >
           <FaInstagram size={24} />
         </a>
-        <a href="https://github.com/iaematt" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/iaematt/blogdomat"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub size={24} />
         </a>
       </Menu>

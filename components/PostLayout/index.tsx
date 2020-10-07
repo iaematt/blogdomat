@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Container, Article, Image } from './styles'
 
 interface Props {
   title: string
@@ -15,8 +15,13 @@ export const PostLayout: React.FC<Props> = ({
 }) => {
   return (
     <Container>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-      <img src={thumbnailUrl} alt={title} />
+      <Article>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+      </Article>
+
+      <Image>
+        <img src={thumbnailUrl} alt={title} />
+      </Image>
     </Container>
   )
 }

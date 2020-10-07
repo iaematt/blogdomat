@@ -2,13 +2,18 @@ import matter from 'gray-matter'
 import marked from 'marked'
 
 const baseUrl =
-  process.env.NODE_ENV === 'development' ? '' : 'https://blogdomat.vercel.app'
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000'
+    : 'https://blogdomat.vercel.app'
 
 export async function getAllPosts() {
   const context = require.context('../../_posts', false, /\.md$/)
   const posts = []
 
-  for (const key of context.keys()) {
+  const files = context.keys()
+  const reverceFiles = files.reverse()
+
+  for (const key of reverceFiles) {
     const post = key.slice(2)
     const content = await import(`../../_posts/${post}`)
     const meta = matter(content.default)

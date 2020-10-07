@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 920px;
 
   h1 {
-    color: #fafafa;
+    color: ${props => props.theme.colors.title};
   }
 
   p {

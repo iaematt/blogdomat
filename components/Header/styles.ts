@@ -9,8 +9,8 @@ export const Container = styled.header`
   align-items: center;
 
   h1 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
   }
 
   @media screen and (max-width: 880px) {

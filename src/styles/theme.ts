@@ -6,7 +6,8 @@ const theme = {
     primary: '#81D6DB',
     secondary: '#c5c5c5',
     selectBackground: '#ffffff',
-    selectColor: '#000000'
+    selectColor: '#000000',
+    codeBackground: '#111111'
   }
 }
 

@@ -40,4 +40,15 @@ export default createGlobalStyle`
   p {
     margin-bottom: 15px;
   }
+
+  pre {
+    padding: 4px;
+    background: ${props => props.theme.colors.codeBackground};
+    font: 400 13px 'Roboto Mono', sans-serif !important;
+    margin-bottom: 15px;
+  }
+
+  em, strong {
+    color: ${props => props.theme.colors.primary};
+  }
 `
