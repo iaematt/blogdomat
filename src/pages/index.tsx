@@ -17,7 +17,10 @@ export default function Home(props: HomeProps) {
       <Head>
         <title>start | blogdom4t</title>
 
-        <meta name="description" content={props.description} />
+        <meta
+          name="description"
+          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
+        />
 
         <meta property="og:site_name" content="blogdomat" />
 
