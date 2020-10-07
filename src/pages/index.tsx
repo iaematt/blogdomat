@@ -16,12 +16,35 @@ export default function Home(props: HomeProps) {
     <>
       <Head>
         <title>start | blogdom4t</title>
+
+        <meta name="description" content={props.description} />
+
+        <meta property="og:site_name" content="blogdomat" />
+
+        <meta property="og:title" content="start page blogdomat" />
+        <meta
+          property="og:description"
+          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
+        />
+
+        <meta property="og:image" content="/image.png" />
+        <meta property="og:image:type" content="image/png" />
+
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="blogdomat" />
+        <meta
+          name="twitter:description"
+          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
+        />
+        <meta name="twitter:image" content="/image.png" />
       </Head>
 
       <Header />
       <PageTitle title="Simples e minimalista, como deve ser.">
         Blog desenvolvido usando Next.js, Typescript, React.js,
-        <br />
         styled-components e markdown... hospedado na famosa vercel.
       </PageTitle>
 

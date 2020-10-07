@@ -20,7 +20,7 @@ export default function Post(props: PostProps) {
 
         <meta name="description" content={props.description} />
 
-        <meta property="og:site_name" content="Blog do Mat" />
+        <meta property="og:site_name" content="blogdomat" />
 
         <meta property="og:title" content={props.title} />
         <meta property="og:description" content={props.description} />

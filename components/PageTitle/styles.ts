@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   margin: 70px auto 0;
   width: 920px;
+  padding-right: 120px;
 
   h1 {
     color: ${props => props.theme.colors.title};
@@ -16,5 +17,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 880px) {
     width: 95%;
+    padding-right: 0;
   }
 `
