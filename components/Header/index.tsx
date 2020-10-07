@@ -13,10 +13,14 @@ export const Header: React.FC = () => {
 
       <Menu>
         <Link href="/contact">Contato</Link>
-        <a href="#">
+        <a
+          href="https://instagram.com/iaematt_"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram size={24} />
         </a>
-        <a href="#">
+        <a href="https://github.com/iaematt" target="_blank" rel="noreferrer">
           <FaGithub size={24} />
         </a>
       </Menu>

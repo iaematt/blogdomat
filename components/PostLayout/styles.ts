@@ -4,7 +4,7 @@ export const Container = styled.article`
   width: 920px;
   margin: 70px auto 10px;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 15px;
 
   img {
@@ -18,5 +18,11 @@ export const Container = styled.article`
   h5,
   h6 {
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 880px) {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
   }
 `

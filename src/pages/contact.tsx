@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { Footer, Header, Menu } from '../../components'
+import { Footer, Header } from '../../components'
 
 const Contact: React.FC = () => {
   return (
@@ -11,7 +11,6 @@ const Contact: React.FC = () => {
       </Head>
 
       <Header />
-      <Menu />
 
       <Footer />
     </>

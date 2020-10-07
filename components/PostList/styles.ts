@@ -20,4 +20,9 @@ export const Container = styled.div`
   img:hover {
     opacity: 1;
   }
+
+  @media screen and (max-width: 880px) {
+    width: 95%;
+    grid-template-columns: repeat(1, auto);
+  }
 `

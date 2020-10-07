@@ -58,7 +58,7 @@ export default function getThumbnailTemplate(title: string, icon: string) {
   </head>
   <body>
     <div id="wrapper">
-      <img src=${icon} width="70" />
+      <img src=${icon} width="120" />
       <h1>${title}</h1>
     </div>
 

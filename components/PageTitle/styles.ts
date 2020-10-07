@@ -13,4 +13,8 @@ export const Container = styled.div`
     font-weight: 300;
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 880px) {
+    width: 95%;
+  }
 `

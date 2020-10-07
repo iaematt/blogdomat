@@ -12,6 +12,10 @@ export const Container = styled.header`
     font-size: 30px;
     font-weight: 500;
   }
+
+  @media screen and (max-width: 880px) {
+    width: 95%;
+  }
 `
 
 export const Menu = styled.div`
