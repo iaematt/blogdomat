@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import { getAllPosts } from './api/posts'
 
@@ -11,6 +12,7 @@ interface HomeProps {
   }>
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function Home(props: HomeProps) {
   return (
     <>
@@ -30,7 +32,10 @@ export default function Home(props: HomeProps) {
           content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
         />
 
-        <meta property="og:image" content="/image.png" />
+        <meta
+          property="og:image"
+          content="https://blogdomat.vercel.app/image.png"
+        />
         <meta property="og:image:type" content="image/png" />
 
         <meta property="og:image:width" content="1200" />
@@ -42,7 +47,10 @@ export default function Home(props: HomeProps) {
           name="twitter:description"
           content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
         />
-        <meta name="twitter:image" content="/image.png" />
+        <meta
+          name="twitter:image"
+          content="https://blogdomat.vercel.app/image.png"
+        />
       </Head>
 
       <Header />
@@ -58,6 +66,7 @@ export default function Home(props: HomeProps) {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function getStaticProps() {
   const allPosts = await getAllPosts()
 

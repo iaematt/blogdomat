@@ -12,11 +12,12 @@ interface PostProps {
   content: string
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function Post(props: PostProps) {
   return (
     <>
       <Head>
-        <title>{props.title} | Blog do Mat</title>
+        <title>{props.title} | blogdomat</title>
 
         <meta name="description" content={props.description} />
 
@@ -52,12 +53,14 @@ export default function Post(props: PostProps) {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function getStaticProps(context: GetStaticPropsContext) {
   return {
     props: await getPostBySlug(context.params.slug)
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function getStaticPaths() {
   let paths = await getAllPosts()
 
