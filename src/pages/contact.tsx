@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         <br />
         ou pelo instagram:{' '}
         <a
-          href="https://github.com/iaematt/blogdomat"
+          href="https://instagram.com/iaematt_"
           target="_blank"
           rel="noreferrer"
         >
