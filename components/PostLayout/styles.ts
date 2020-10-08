@@ -29,6 +29,11 @@ export const Container = styled.article`
 export const Article = styled.article`
   width: 60%;
 
+  img {
+    max-width: 100%;
+    border-bottom: 2px solid #333;
+  }
+
   @media screen and (max-width: 880px) {
     width: 100%;
   }
