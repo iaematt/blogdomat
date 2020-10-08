@@ -17,7 +17,9 @@ export const PostList: React.FC<Props> = ({ posts }) => {
       {posts.map((post, idx) => (
         <article key={idx}>
           <Link href={post.slug}>
-            <img src={post.thumbnailUrl} alt={post.title} />
+            <a>
+              <img src={post.thumbnailUrl} alt={post.title} />
+            </a>
           </Link>
         </article>
       ))}
