@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://blog.devbsb.com.br/</loc>
+    <lastmod>2020-10-08T00:52:12-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.devbsb.com.br/contact</loc>
+    <lastmod>2020-10-08T00:52:12-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.devbsb.com.br/1-como-usar-esse-blog-minimalista-na-vercel</loc>
+    <lastmod>2020-10-08T00:52:12-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.devbsb.com.br/2-alterando-cores-do-blog</loc>
+    <lastmod>2020-10-08T00:52:12-03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.devbsb.com.br/3-mudar-o-template-das-imagens</loc>
+    <lastmod>2020-10-08T00:52:12-03:00</lastmod>
+  </url>
+</urlset>
