@@ -8,6 +8,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #__next {
+    height: 100%;
+  }
+
   body {
     background-color: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
