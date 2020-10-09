@@ -14,7 +14,7 @@ Primeiro acesse o arquivo _src/pages/api/thumbnail.ts_
 
 ```
 [...]
-// PRODUCTION
+# PRODUCTION
 const file = await getScreenshot(html, isDev, 1200, 630)
 
 res.setHeader('Content-Type', 'image/png')
@@ -25,9 +25,9 @@ res.setHeader(
 
 return res.end(file)
 
-// DEVELOPMENT
-// res.setHeader('Content-Type', 'text/html')
-// return res.end(html)
+# DEVELOPMENT
+# res.setHeader('Content-Type', 'text/html')
+# return res.end(html)
 [...]
 ```
 

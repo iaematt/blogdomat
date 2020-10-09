@@ -17,14 +17,16 @@ Vou mostrar de forma simples como baixar, configurar e hospedar este blog na ver
 Primeiro você vai clonar o repositório do [github](https://github.com/iaematt/blogdomat), você vai precisar de uma conta da [vercel](https://vercel.com) e esta logado nela:
 
 ```
-// faça o clone do repositório, e escolha o nome de sua preferência
+# faça o clone do repositório, e escolha o nome de sua preferência
 git clone https://github.com/iaematt/blogdomat.git nomedoseublog
-// acesse a pasta
+
+# acesse a pasta
 cd nomedoseublog
-// instale as dependencias
+
+# instale as dependencias
 yarn
 
-// rode a aplicação como desenvolvimento usando a vercel
+# rode a aplicação como desenvolvimento usando a vercel
 vercel dev
 ```
 
@@ -37,17 +39,17 @@ Acesse a pasta componentes e visualize a pasta Footer e Header, você deverá al
 Para alterar os icones de links do header, abra o arquivo index.tsx dentro da pasta Header (em componentes), logo acesse o [react-icons](https://react-icons.github.io/react-icons/) e escolha os icones de sua preferencia e faça o importe do mesmo no arquivo e faça a substituição:
 
 ```
-// padrão
+# padrão
 import { FaGithub, FaInstagram } from 'react-icons/fa'
 [...]
 <FaInstagram size={24} />
 
-// alterações feitas
+# alterações feitas
 import { FaGithub, FaSnapchatGhost } from 'react-icons/fa'
 [...]
 <FaSnapchatGhost size={24}>
 
-* não esqueça de editar também os links
+# * não esqueça de editar também os links
 [...]
 href="https://github.com/iaematt/blogdomat"
 ```
@@ -65,17 +67,17 @@ Agora vamos alterar o titulo e texto padrão da home do blog. Acesse arquivo _sr
 A última alteração que precisa ser feita é dentro do arquivo _src/pages/api/posts.ts_, você vai precisar alterar a url do seu blog, primeiramente você precisa fazer o deploy dele na vercel para saber qual a url que será disponibilizada.
 
 ```
-// faça o deploy da sua aplicação
+# faça o deploy da sua aplicação
 vercel --prod
 
-// após o envio, no console será exibido qual será a url do seu blog
+# após o envio, no console será exibido qual será a url do seu blog
 [...]
 const baseUrl =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
     : 'https://blogdomat.vercel.app'
 
-// cole no lugar de: https://blogdomat.vercel.app
+# cole no lugar de: https://blogdomat.vercel.app
 ```
 
 Para alterar o favicon do site, abra o arquivo _src/pages/\_document.tsx_

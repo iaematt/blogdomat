@@ -46,10 +46,11 @@ export default createGlobalStyle`
   }
 
   pre {
-    padding: 4px;
+    padding: 10px 15px;
     background: ${props => props.theme.colors.codeBackground};
     font: 400 13px 'Roboto Mono', sans-serif !important;
     margin-bottom: 15px;
+    overflow-x: auto;
   }
 
   em, strong {

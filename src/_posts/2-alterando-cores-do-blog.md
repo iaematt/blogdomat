@@ -31,22 +31,30 @@ Vou explicar com detalhes o que cada propriedade altera no layout:
 ```
 const theme = {
   colors: {
-    // essa é cor de fundo do blog
+    # essa é cor de fundo do blog
     background: '#080808',
-    // essa é a cor de todo o texto do blog
+
+    # essa é a cor de todo o texto do blog
     text: '#e3e3e3',
-    // essa é a cor de todos os titúlos do blog, ex: h1, h2 [...]
+
+    # essa é a cor de todos os titúlos do blog, ex: h1, h2 [...]
     title: '#c4c4c4',
-    // essa é a cor primária do site, usada para: links,
-    // itálicos, negritos [...]
+
+    # essa é a cor primária do site, usada para: links,
+    # itálicos, negritos [...]
     primary: '#81D6DB',
-    // essa é a cor secundária, usada principalmente para o hover dos links
+
+    # essa é a cor secundária, usada principalmente
+    # para o hover dos links
     secondary: '#c5c5c5',
-    // cor de fundo do texto selecionado no blog
+
+    # cor de fundo do texto selecionado no blog
     selectBackground: '#ffffff',
-    // cor do texto selecionado no blog
+
+    # cor do texto selecionado no blog
     selectColor: '#000000',
-    // cor de fundo do bloco de código
+
+    # cor de fundo do bloco de código
     codeBackground: '#111111'
   }
 }
