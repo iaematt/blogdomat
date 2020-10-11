@@ -47,7 +47,7 @@ export default function getThumbnailTemplate(title: string, icon: string) {
 
       .hover-background {
         width: 120%;
-        background: #81D6DB;
+        background: #ed2a4c;
         height: 80px;
         position: fixed;
         left: -20px;

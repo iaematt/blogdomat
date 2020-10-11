@@ -27,11 +27,13 @@ export const Container = styled.article`
 `
 
 export const Article = styled.article`
-  width: 60%;
+  width: 65%;
 
   img {
     max-width: 100%;
     border-bottom: 2px solid #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
   }
 
   @media screen and (max-width: 880px) {
@@ -40,7 +42,7 @@ export const Article = styled.article`
 `
 
 export const Image = styled.div`
-  width: 39%;
+  width: 34%;
   padding-top: 47px;
 
   @media screen and (max-width: 880px) {
@@ -51,5 +53,7 @@ export const Image = styled.div`
 
   img {
     max-width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
   }
 `

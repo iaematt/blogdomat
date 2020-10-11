@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 920px;
-  margin: 60px auto 0;
+  margin: 0 auto;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,7 +26,7 @@ export const Menu = styled.div`
   a {
     margin: 0 12px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   a:last-child {

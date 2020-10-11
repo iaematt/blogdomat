@@ -9,16 +9,17 @@ export const Container = styled.div`
 
   img {
     max-width: 100%;
-    /* border-radius: 5px; */
+    border-radius: 1px;
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s ease-in-out;
     /* border: 5px solid #000; */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   img:hover {
     opacity: 1;
+    transform: scale(1.05);
   }
 
   @media screen and (max-width: 880px) {

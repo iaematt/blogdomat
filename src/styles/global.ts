@@ -51,6 +51,8 @@ export default createGlobalStyle`
     font: 400 13px 'Roboto Mono', sans-serif !important;
     margin-bottom: 15px;
     overflow-x: auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
   }
 
   em, strong {
