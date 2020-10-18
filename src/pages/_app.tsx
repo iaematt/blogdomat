@@ -17,7 +17,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" type="text/css" href="/nprogress.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="/assets/css/nprogress.css"
+        />
       </Head>
 
       <ThemeProvider theme={theme}>

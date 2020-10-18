@@ -33,7 +33,9 @@ export default createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6, strong {
+    margin-top: 35px;
     font-weight: 700;
+    color: ${props => props.theme.colors.title};
   }
 
   ::selection {
@@ -42,7 +44,7 @@ export default createGlobalStyle`
   }
 
   p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   pre {

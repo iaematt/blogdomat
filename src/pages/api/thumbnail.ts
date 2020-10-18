@@ -4,10 +4,13 @@ import getThumbnailTemplate from './_lib/thumbTemplate'
 
 const isDev = !process.env.AWS_REGION
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function (
+  Request: NextApiRequest,
+  Response: NextApiResponse
+) {
   try {
-    const title = String(req.query.title)
-    const icon = String(req.query.icon)
+    const title = String(Request.query.title)
+    const icon = String(Request.query.icon)
 
     if (!title) {
       throw new Error('Title is required')
@@ -18,20 +21,20 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
     // PRODUCTION
     const file = await getScreenshot(html, isDev, 1200, 630)
 
-    res.setHeader('Content-Type', 'image/png')
-    res.setHeader(
+    Response.setHeader('Content-Type', 'image/png')
+    Response.setHeader(
       'Cache-control',
       'public, immutable, no-transform, s-maxage=31536000, max-age=31536000'
     )
 
-    return res.end(file)
+    return Response.end(file)
 
     // DEVELOPMENT
-    // res.setHeader('Content-Type', 'text/html')
-    // return res.end(html)
+    // Response.setHeader('Content-Type', 'text/html')
+    // return Response.end(html)
   } catch (err) {
     console.log(err)
 
-    res.status(500).send('Internal server error')
+    Response.status(500).send('Internal server error')
   }
 }

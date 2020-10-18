@@ -34,7 +34,7 @@ export default function Home(props: HomeProps) {
 
         <meta
           property="og:image"
-          content="https://blogdomat.vercel.app/image.png"
+          content="https://blog.devbsb.com.br/assets/img/image.png"
         />
         <meta property="og:image:type" content="image/png" />
 
@@ -49,7 +49,7 @@ export default function Home(props: HomeProps) {
         />
         <meta
           name="twitter:image"
-          content="https://blogdomat.vercel.app/image.png"
+          content="https://blog.devbsb.com.br/assets/img/image.png"
         />
       </Head>
 
