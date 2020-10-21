@@ -7,10 +7,8 @@ export const Footer: React.FC = () => {
   return (
     <Container>
       <p>
-        2020 © <Link href="/">blogdomat</Link>.
+        2020 © <Link href="/">{process.env.BLOG_NAME}</Link>.
       </p>
-
-      <p></p>
     </Container>
   )
 }

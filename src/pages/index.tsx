@@ -17,46 +17,37 @@ export default function Home(props: HomeProps) {
   return (
     <>
       <Head>
-        <title>start | blogdom4t</title>
+        <title>{process.env.BLOG_NAME}</title>
 
-        <meta
-          name="description"
-          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
-        />
-
-        <meta property="og:site_name" content="blogdomat" />
-
-        <meta property="og:title" content="start page blogdomat" />
+        <meta name="description" content={process.env.BLOG_DESCRIPTION} />
+        <meta property="og:site_name" content={process.env.BLOG_NAME} />
+        <meta property="og:title" content={process.env.BLOG_NAME} />
         <meta
           property="og:description"
-          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
+          content={process.env.BLOG_DESCRIPTION}
         />
-
         <meta
           property="og:image"
-          content="https://blog.devbsb.com.br/assets/img/image.png"
+          content={`${process.env.BLOG_URL}/assets/img/image.png`}
         />
         <meta property="og:image:type" content="image/png" />
-
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="blogdomat" />
+        <meta name="twitter:title" content={process.env.BLOG_NAME} />
         <meta
           name="twitter:description"
-          content="Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel."
+          content={process.env.BLOG_DESCRIPTION}
         />
         <meta
           name="twitter:image"
-          content="https://blog.devbsb.com.br/assets/img/image.png"
+          content={`${process.env.BLOG_URL}/assets/img/image.png`}
         />
       </Head>
 
       <Header />
-      <PageTitle title="Simples e minimalista, como deve ser.">
-        Blog desenvolvido usando Next.js, Typescript, React.js,
-        styled-components e markdown... hospedado na famosa vercel.
+      <PageTitle title={process.env.BLOG_TITLE}>
+        {process.env.BLOG_DESCRIPTION}
       </PageTitle>
 
       <PostList posts={props.posts} />

@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <h1>
-        <Link href="/">blogdomat</Link>
+        <Link href="/">{process.env.BLOG_NAME}</Link>
       </h1>
 
       <Menu>

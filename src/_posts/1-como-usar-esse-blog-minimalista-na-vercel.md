@@ -54,30 +54,24 @@ import { FaGithub, FaSnapchatGhost } from 'react-icons/fa'
 href="https://github.com/iaematt/blogdomat"
 ```
 
-Agora vamos alterar o titulo e texto padrão da home do blog. Acesse arquivo _src/pages/index.tsx_:
-
-```
-[...]
-<PageTitle title="Simples e minimalista, como deve ser.">
-  Blog desenvolvido usando Next.js, React.js,styled-components <br /> e
-  markdown (para os posts) , hospedado na famosa vercel.
-</PageTitle>
-```
-
 A última alteração que precisa ser feita é dentro do arquivo _src/pages/api/posts.ts_, você vai precisar alterar a url do seu blog, primeiramente você precisa fazer o deploy dele na vercel para saber qual a url que será disponibilizada.
 
 ```
 # faça o deploy da sua aplicação
 vercel --prod
+```
 
-# após o envio, no console será exibido qual será a url do seu blog
+Agora acesse o arquivo _next.config.js_ e altere as variáveis globais, inclusive a url disponibilizada na vercel:
+
+```
 [...]
-const baseUrl =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : 'https://blogdomat.vercel.app'
-
-# cole no lugar de: https://blogdomat.vercel.app
+  env: {
+    BLOG_NAME: 'blogdomat',
+    BLOG_TITLE: "Simples e minimalista, como deve ser.",
+    BLOG_DESCRIPTION: "Blog desenvolvido usando Next.js, Typescript, ...",
+    BLOG_URL: 'https://blog.devbsb.com.br',
+  }
+[...]
 ```
 
 Para alterar o favicon do site, abra o arquivo _src/pages/\_document.tsx_

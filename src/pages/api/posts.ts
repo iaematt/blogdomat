@@ -4,8 +4,9 @@ import marked from 'marked'
 const baseUrl =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://blogdomat.vercel.app'
+    : process.env.BLOG_URL
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function getAllPosts() {
   const context = require.context('../../_posts', false, /\.md$/)
   const posts = []
@@ -30,6 +31,7 @@ export async function getAllPosts() {
   return posts
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export async function getPostBySlug(slug: any) {
   const fileContent = await import(`../../_posts/${slug}.md`)
 

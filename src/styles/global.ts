@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { lighten } from 'polished'
 
 export default createGlobalStyle`
   * {
@@ -13,7 +12,10 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.colors.background};
+    //background-color: ${props => props.theme.colors.background};
+    background: rgb(24,25,26);
+    background: linear-gradient(30deg, rgba(24,25,26,1) 0%, rgba(10,10,11,1) 100%);
+    background-attachment: fixed;
     color: ${props => props.theme.colors.text};
   }
 
