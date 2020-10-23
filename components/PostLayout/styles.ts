@@ -36,6 +36,16 @@ export const Article = styled.article`
     border-radius: 1px;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    margin-top: 35px;
+  }
+
   @media screen and (max-width: 880px) {
     width: 100%;
   }
