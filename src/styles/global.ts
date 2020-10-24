@@ -59,7 +59,6 @@ export default createGlobalStyle`
     border-radius: 1px;
     word-wrap: break-word;
     width: 100%;
-    white-space: nowrap;
   }
 
   em, strong {
