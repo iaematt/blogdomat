@@ -44,6 +44,7 @@ export async function getPostBySlug(slug: any) {
     title: meta.data.title,
     description: meta.data.description,
     thumbnailUrl,
+    slug,
     content
   }
 }

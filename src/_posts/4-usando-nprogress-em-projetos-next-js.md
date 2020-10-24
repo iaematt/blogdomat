@@ -54,7 +54,6 @@ Prontinho, o _NProgress_ já está configurado e pronto para ser usado no seu pr
 
 Veja como ficará o arquivo _\_app_:
 
-
 ```
 import React from 'react'
 import Head from 'next/head'

@@ -59,6 +59,10 @@ export const Image = styled.div`
     padding-top: 0;
     width: 100%;
     margin-bottom: 40px;
+
+    img {
+      position: static !important;
+    }
   }
 
   img {
