@@ -24,7 +24,6 @@ interface Props {
 
 const Share: React.FC<Props> = ({ title, description, slug }) => {
   const shareUrl = process.env.BLOG_URL + '/' + slug
-  console.log(slug)
 
   return (
     <Container>

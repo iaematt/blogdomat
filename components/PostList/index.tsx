@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Container } from './styles'
+import { Container, Image } from './styles'
 
 interface Props {
   posts: {
@@ -18,7 +18,7 @@ export const PostList: React.FC<Props> = ({ posts }) => {
         <article key={idx}>
           <Link href={post.slug}>
             <a>
-              <img src={post.thumbnailUrl} alt={post.title} />
+              <Image src={post.thumbnailUrl} alt={post.title} />
             </a>
           </Link>
         </article>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { Container, Error, Message } from './styles'
 
@@ -12,6 +13,12 @@ export const StatusLayout: React.FC<Props> = ({ error, children }) => {
       <div>
         <Error>{error}</Error>
         <Message>{children}</Message>
+
+        <span>
+          <Link href="/">
+            <a title="Voltar para página inicial">Voltar para o início</a>
+          </Link>
+        </span>
       </div>
     </Container>
   )

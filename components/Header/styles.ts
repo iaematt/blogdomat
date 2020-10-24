@@ -8,6 +8,7 @@ export const Container = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  animation: fadeInHeader 380ms ease-in-out;
 
   h1 {
     font-size: 20px;
@@ -16,6 +17,16 @@ export const Container = styled.header`
 
   @media screen and (max-width: 880px) {
     width: 95%;
+  }
+
+  @keyframes fadeInHeader {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `
 

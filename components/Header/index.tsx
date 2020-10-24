@@ -8,15 +8,20 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <h1>
-        <Link href="/">{process.env.BLOG_NAME}</Link>
+        <Link href="/">
+          <a title={process.env.BLOG_NAME}>{process.env.BLOG_NAME}</a>
+        </Link>
       </h1>
 
       <Menu>
-        <Link href="/contact">Contato</Link>
+        <Link href="/contact">
+          <a title="Contato">Contato</a>
+        </Link>
         <a
           href="https://instagram.com/iaematt_"
           target="_blank"
           rel="noreferrer"
+          title="Instagram"
         >
           <FaInstagram size={24} />
         </a>
@@ -24,6 +29,7 @@ export const Header: React.FC = () => {
           href="https://github.com/iaematt/blogdomat"
           target="_blank"
           rel="noreferrer"
+          title="Código da aplicação no GitHub"
         >
           <FaGithub size={24} />
         </a>

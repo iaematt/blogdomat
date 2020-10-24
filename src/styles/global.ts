@@ -57,6 +57,9 @@ export default createGlobalStyle`
     overflow-x: auto;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     border-radius: 1px;
+    word-wrap: break-word;
+    width: 100%;
+    white-space: nowrap;
   }
 
   em, strong {

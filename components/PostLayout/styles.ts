@@ -9,6 +9,7 @@ export const Container = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  animation: fadeInPost 380ms ease-in-out;
 
   h1,
   h2,
@@ -23,6 +24,16 @@ export const Container = styled.article`
     width: 95%;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  @keyframes fadeInPost {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 `
 
@@ -68,9 +79,10 @@ export const Image = styled.div`
   img {
     max-width: 100%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
+    border-radius: 2px;
     position: sticky;
     position: --webkit-sticky;
     top: 20px;
+    filter: brightness(0.9);
   }
 `

@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   svg:hover {
     opacity: 1;
+    transform: scale(1.08);
   }
 
   @media screen and (max-width: 880px) {
