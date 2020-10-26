@@ -13,10 +13,16 @@ const Contact: React.FC = () => {
       <Header />
 
       <PageTitle title="Entre em contato">
-        Fale comigo pelo e-mail:{' '}
-        <a href="mailto:matheusbastos@outlook.com">matheusbastos@outlook.com</a>{' '}
+        Olá!!1 Eu sou Matheus, dono desse blog bem simples, <br />
+        com o intúito de ajudar com assuntos genéricos.
         <br />
-        ou pelo instagram:{' '}
+        <br />
+        Para me contatar utilize o e-mail: <br />
+        <a href="mailto:matheusbastos@outlook.com">
+          matheusbastos@outlook.com
+        </a>{' '}
+        <br />
+        ou me chame no instagram: <br />
         <a
           href="https://instagram.com/iaematt_"
           target="_blank"

@@ -28,7 +28,7 @@ export default function Home(props: HomeProps) {
         />
         <meta
           property="og:image"
-          content={`${process.env.BLOG_URL}/assets/img/image.png`}
+          content={`${process.env.BLOG_URL}/assets/img/thumbnail.png`}
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
@@ -41,7 +41,7 @@ export default function Home(props: HomeProps) {
         />
         <meta
           name="twitter:image"
-          content={`${process.env.BLOG_URL}/assets/img/image.png`}
+          content={`${process.env.BLOG_URL}/assets/img/thumbnail.png`}
         />
       </Head>
 

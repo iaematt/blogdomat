@@ -24,7 +24,7 @@ export default function Post(props: PostProps) {
 
         <meta name="description" content={props.description} />
 
-        <meta property="og:site_name" content="{process.env.BLOG_NAME}" />
+        <meta property="og:site_name" content={process.env.BLOG_NAME} />
 
         <meta property="og:title" content={props.title} />
         <meta property="og:description" content={props.description} />
