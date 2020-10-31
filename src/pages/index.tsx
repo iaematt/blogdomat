@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import { getAllPosts } from './api/posts'
 
-import { Footer, Header, PageTitle, PostList } from '../../components'
+import { Header, PageTitle, PostList } from '../../components'
+import { Footer } from '@components/ui'
 
 interface HomeProps {
   posts: Array<{

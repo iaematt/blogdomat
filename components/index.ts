@@ -1,4 +1,3 @@
-export { Footer } from './Footer'
 export { Header } from './Header'
 export { PageTitle } from './PageTitle'
 export { PostLayout } from './PostLayout'

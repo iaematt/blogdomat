@@ -3,15 +3,12 @@ import Link from 'next/link'
 import { FaGithub, FaInstagram } from 'react-icons/fa'
 
 import { Container, Menu } from './styles'
+import { Logo } from '@components/ui'
 
 export const Header: React.FC = () => {
   return (
     <Container>
-      <h1>
-        <Link href="/">
-          <a title={process.env.BLOG_NAME}>{process.env.BLOG_NAME}</a>
-        </Link>
-      </h1>
+      <Logo />
 
       <Menu>
         <Link href="/contact">

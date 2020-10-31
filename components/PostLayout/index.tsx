@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Container, Article, Image } from './styles'
 import { Share } from '../index'
+import { Comments } from '@components/ui'
 
 interface Props {
   title: string
@@ -22,6 +23,8 @@ export const PostLayout: React.FC<Props> = ({
     <Container>
       <Article>
         <div dangerouslySetInnerHTML={{ __html: content }} />
+
+        <Comments slug={slug} />
       </Article>
 
       <Image>

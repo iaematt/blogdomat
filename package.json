@@ -15,6 +15,7 @@
     "puppeteer-core": "^5.3.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-facebook": "^8.1.4",
     "react-icons": "^3.11.0",
     "react-share": "^4.3.1",
     "sitemap": "^6.3.2",

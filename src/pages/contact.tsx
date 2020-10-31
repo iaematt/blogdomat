@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { Footer, Header, PageTitle } from '../../components'
+import { Header, PageTitle } from '../../components'
+import { Footer } from '@components/ui'
 
 const Contact: React.FC = () => {
   return (

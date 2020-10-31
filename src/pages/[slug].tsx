@@ -3,7 +3,9 @@ import Head from 'next/head'
 import { GetStaticPropsContext } from 'next'
 
 import { getPostBySlug, getAllPosts } from './api/posts'
-import { Footer, Header, PostLayout, PageTitle } from '../../components'
+import { Header, PostLayout, PageTitle } from '../../components'
+
+import { Footer } from '@components/ui'
 
 interface PostProps {
   title: string

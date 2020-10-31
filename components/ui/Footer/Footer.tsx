@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { Container } from './styles'
 
-export const Footer: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <Container>
       <p>
@@ -16,3 +16,5 @@ export const Footer: React.FC = () => {
     </Container>
   )
 }
+
+export default Footer

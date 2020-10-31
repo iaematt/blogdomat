@@ -11,5 +11,6 @@ module.exports = {
     BLOG_TITLE: "Simples e minimalista, como deve ser.",
     BLOG_DESCRIPTION: "Blog desenvolvido usando Next.js, Typescript, React.js, styled-components e markdown... hospedado na famosa vercel.",
     BLOG_URL: 'https://blog.devbsb.com.br',
+    FACEBOOK_APPID: '2805652193002434'
   }
 }
