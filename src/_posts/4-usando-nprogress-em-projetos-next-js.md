@@ -1,7 +1,7 @@
 ---
 title: 'Usando NProgress em projetos next.js'
 description: 'Vou ensinar como instalar e configurar o NProgress em projetos next.js.'
-icon: 'https://cdn.worldvectorlogo.com/logos/javascript.svg'
+icon: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg'
 ---
 
 ## O que é NProgress?

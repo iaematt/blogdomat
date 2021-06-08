@@ -1,7 +1,7 @@
 ---
 title: 'Mudando o layout do template da imagem'
 description: 'Vou ensinar como alterar o template das imagens geradas'
-icon: 'https://cdn.worldvectorlogo.com/logos/html-5.svg'
+icon: 'https://cdn.worldvectorlogo.com/logos/html5-2.svg'
 ---
 
 ## Alterar o template das imagens geradas
